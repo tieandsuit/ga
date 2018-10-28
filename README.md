@@ -15,4 +15,24 @@ But we have also strong artificial intelligence and in this case the the techniq
 ---------------------------------------------
 ![AI](Untitled9.jpg)
 
+Anyway after this introduction I want to talk about genetic algorithms  . They also imitate nature they don't imitate the thinking process so you see in the strong AI . The computer is really thinking , because we have neurons we have synapse  it's simulating the process of a real brain so we can really say it's thinking in a very simple way . Because it's a very simplified model of a brain  . But it's already thinking . Here we are going to imitate nature , by imitating evolution as a way to gradually get better and better .Let's quickly review how natural evolution works , we have a population of living beings and ,  every living being is built from a set of instructions that is just a sequence of genes and the ones that adapt better to the environment they can survive and they can have children and those children will inherit the characteristics . There is also some diversity that helps make possibly slightly better children and slightly worse children and you combine that together and generation after generation you are going to have better and better adapt beings . The typical case is  the zebra so the slowest zebras they are eaten by lions .They cannot have children they die before they have children . The faster ones they have children and those children will be slightly faster than the previous generation and that generation over generation in thousands of years , You get faster and faster zebras and of course faster and faster lions which have to eat zebras . 
+
+-------------------------------------------
+![AI](Untitled4.png)
+
+ Okay so we try to do the same thing for finding a solution that we couldn't solve by brute force . Every individual of the population is a potential solution and the environment is the problem we want to solve . We'll see how we do that . How this works , we start with a random set of solutions , Just very ugly monsters that add up very badly to the environment and we select the best ones and we marry them to have children or well we just let them have children . Best solutions have more children than the worst the the worst also have children because it's good to have diversity  . But they have fewer and we iterate over and over and every generation we are going to have more better solutions than in the previous one . At any moment in time we are in a given generation the solution to the problem is the best of the individuals in this generation . So we keep iterating until we decide our solution is good enough or we find you know the user can decide when to stop or there has been like 10 minutes without an in new solution or whatever .
+ 
+ ----------------------------------------
+ ![AI](Untitled.png)
+ 
+  What kind of problems can we be solved with this technique . Pretty much anything that we can encode as a sequence . You know the genetic information is a sequence so we can encode it in a sequence . It can be numbers characters , it can be symbols ,whatever . We need to be able to encode it and we also need to have a way to evaluate which solution is better and which is worse . We need to give a scoring , for example this is still a little abstract but we have three solutions which are just three sequences of numbers . We apply the evaluation function and we give different scores so this is like a lottery . When we want them to have children E1 has more tickets to the lottery and E2 has less tickets , So E1 will be three times more likely to have children than E2 three times more children . Every generation we do the same , this is a very abstract problem . Let's see an a specific example Traveling Salesman Problem which is very typical problem .
+  
+----------------------------------------
+ ![AI](Untitled5.png)
+ 
+ We have a list of cities and we want to find the shortest route so this is a very famous problem because it's kind of academic problem for computation for techniques of finding solutions , but also because it is equivalent to other problems which are more useful like logistics . We have you know big ecommerce with lot of trucks ,  we want to give all the deliveries right . What is the best distribution of loads of things to put in trucks , where should each truck go . It's a matter of recombining different possible solutions in a sequence and right planning . So we have a set of tasks and people that need to do tasks and which is the best way to do that same thing . This is only an example , there are many other problems that can be solved with genetic algorithms .
+ 
+----------------------------------------
+
+ ![AI](Untitled6.png)
 
