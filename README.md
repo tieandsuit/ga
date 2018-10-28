@@ -185,4 +185,4 @@ Okay so, well because this is supposed to be about (ePL) Elastic Programing Lang
 Update are coming ASAP 
 
 
-thank you for suport XEL-MAYC-ZZ3Y-YX56-6NH52
+Thank you, for suport XEL-MAYC-ZZ3Y-YX56-6NH52
