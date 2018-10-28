@@ -5,6 +5,7 @@ I'm going to talk about genetic algorithms, we will have a quick introduction to
 Solving which kind of problems and finally, I'll make a demo of XEL application that uses genetic algorithm technique for solving a special kind of problem.
 
 So artificial intelligence is getting a lot of attention recently, why Is that so?
+
 -----------------------------------------------
 ![AI](Untitled2.png)
 
