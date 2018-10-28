@@ -33,6 +33,20 @@ Anyway after this introduction I want to talk about genetic algorithms  . They a
  We have a list of cities and we want to find the shortest route so this is a very famous problem because it's kind of academic problem for computation for techniques of finding solutions , but also because it is equivalent to other problems which are more useful like logistics . We have you know big ecommerce with lot of trucks ,  we want to give all the deliveries right . What is the best distribution of loads of things to put in trucks , where should each truck go . It's a matter of recombining different possible solutions in a sequence and right planning . So we have a set of tasks and people that need to do tasks and which is the best way to do that same thing . This is only an example , there are many other problems that can be solved with genetic algorithms .
  
 ----------------------------------------
-
  ![AI](Untitled6.png)
+
+So again why do we need genetic algorithms instead of just other techniques  ? well because when you have a lot of cities the complexity the number of possible computation is huge and it's n factorial . You see take the first city you have impossible choices second city and minus 1 possible choices because you do 1 is taken and so on and this is this is huge . With only 20 cities you have a trillion possible combinations and 48 cities you have about the same amount of possible combinations as atoms that are in the universe so this is astronomical amount . I did a little measurement in my computer and with 26 cities with the power of my computer it would take longer than the age of the universe to compute all possible computer permutations . My machine could be faster , we have XEL Platform that are thousand times faster . But just add a couple more cities , already back to the same amount of time required . So the good thing about genetic algorithms is that it scales very well . You can add hundreds you can throw hundreds and hundreds of cities and it will quite quickly find a reasonable solution . it's not going to be the best possible solution , we don't know ,we cannot know if it's the best possible solution . But in a reasonable amount of time we're going to have a pretty good one and we can wait and see if we get better ones over the generations . 
+
+---------------------------------------
+ ![AI](Untitled7.png)
+
+How we do this specifically how we solve Traveling Salesman problem with genetic algorithms ? as I say before we need a way to encode . So that's very easy , every city is a number . How we do the evaluation function ? We just compute the distance ,that's it. For every sequence of cities , we compute the distance , the shortest routes are going to be better , and the longest ones are going to be worse so it's the opposite of the other example .
+
+---------------------------------------
+ ![AI](Untitled8.png)
+ 
+ 
+ How we make children so we have a sequence of cities which is the parent and a sequence of cities which is the father and the mother ? so we can take the first half from the mother and the second half from the father and we stick them together . But we have to skip the repetitions . So 5 , 2 , 3 and  4 , 6 , 1 .  Pretty simple ,  that's a simplification . We can add randomness we can cut not just in the middle we can cut somewhere else we can add mutations like we can flip some numbers etc ..  But in the end you make children by just combining the sequences of two elements of the population . Okay so , well because this is supposed to be about (ePL) Elastic Programing Language  we are still on early stage . Update are coming ASAP 
+ 
+
 
